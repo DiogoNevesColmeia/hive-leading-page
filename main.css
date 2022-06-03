@@ -1,0 +1,304 @@
+* {
+  font-family: "Bai Jamjuree", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  color: #dedede;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  background-color: rgba(0, 0, 0);
+}
+blockquote {
+  text-align: justify;
+}
+@keyframes background-zoom {
+  0% {
+    background-size: 100% 100%;
+  }
+
+  100% {
+    background-size: 100% 170%;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#first-section {
+  background-image: url("./images/waves-7146711_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom;
+  background-size: 100% 100%;
+  animation: background-zoom ease-in-out 4s forwards;
+  width: 100%;
+  height: 100%;
+}
+.nav-bar {
+  width: 100%;
+  height: 70px;
+}
+.nav-bar div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 5px;
+}
+.nav-bar img {
+  height: 60px;
+}
+
+@keyframes nav-bar-fixed {
+  100% {
+    top: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #04a0d4;
+  }
+}
+
+.nav-bar-fixed div {
+  animation: nav-bar-fixed ease-in-out 2s forwards;
+  z-index: 999999;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid transparent;
+}
+@keyframes show-main-message {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  animation: show-main-message linear 5s forwards;
+}
+
+.main-message strong {
+  position: relative;
+  top: -50px;
+}
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes for-beyond-technology-message-fixed {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 40px;
+    top: 10px;
+    position: fixed;
+  }
+}
+
+.for-beyond-technology-message-fixed {
+  animation: for-beyond-technology-message-fixed linear 1s forwards;
+  z-index: 999999;
+}
+
+.for-beyond-technology-message img {
+  height: 50px;
+}
+
+.IAs-logo {
+}
+.IAs-logo img {
+  height: 50px;
+  position: relative;
+  top: 0px;
+}
+.menu-button {
+  position: relative;
+}
+.menu-button button {
+  min-width: 130px;
+  padding: 8px 20px;
+  background-color: transparent;
+  border-width: 0px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+@keyframes menu-button-fixed {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    right: 40px;
+    top: 0px;
+    position: fixed;
+  }
+}
+
+.menu-button-fixed {
+  animation: menu-button-fixed linear 1s forwards;
+  z-index: 999999;
+}
+
+#second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+@keyframes planet-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(380deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#second-section img {
+  float: left;
+  width: 500px;
+  height: 300px;
+  position: relative;
+  top: -80px;
+}
+.what-us-do {
+  position: absolute;
+  width: 600px;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  line-height: 35px;
+  bottom: 60px;
+  display: none;
+  opacity: 0;
+}
+
+@keyframes second-section-text {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes second-section-anime {
+  100% {
+    width: 80%;
+    height: 170px;
+    top: -50px;
+  }
+}
+.second-section-anime .what-us-do {
+  display: inline-block;
+  animation: second-section-text linear 3s forwards;
+}
+.second-section-anime img {
+  animation: second-section-anime linear 2s forwards;
+}
+
+.split-content-hexagon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.split-content-hexagon div {
+  border-top: 100px dashed #000000;
+  border-left: 452px solid transparent;
+  border-right: 552px solid transparent;
+  border-bottom: 50px dotted #000000;
+  background-color: #0b0b1e;
+  height: 150px;
+  width: 100%;
+}
+
+#third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0b1e;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding: 40px 20px;
+  padding-bottom: 30px;
+  line-height: 35px;
+}
+
+.about-us-text {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.about-us-text h2,
+h3 {
+  margin-top: 60px;
+}
+.about-us-text div {
+  max-width: 700px;
+}
+.about-us-text blockquote {
+  border-left: 4px solid #026282;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@keyframes bg-black-smooth {
+  100% {
+    background-size: auto 110%;
+  }
+}
+.four-section {
+  background-color: #023b4f;
+  background-image: url("./images/businessman-3213659_1920.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+  animation: bg-black-smooth linear 2s forwards infinite;
+}
+.four-section img {
+  max-width: 400px;
+}
+
+.bg-black-smooth {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+  clip-path: polygon(50%, 0%, 100%, 50%, 100%, 0%, 50%);
+}
