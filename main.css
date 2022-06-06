@@ -15,6 +15,15 @@ body {
 blockquote {
   text-align: justify;
 }
+blockquote,
+p {
+  font-size: 18px;
+  line-height: 32px;
+}
+h2,
+h3 {
+  margin-top: 60px;
+}
 @keyframes background-zoom {
   0% {
     background-size: 100% 100%;
@@ -195,11 +204,9 @@ blockquote {
 .what-us-do {
   position: absolute;
   width: 600px;
-  font-size: 18px;
   text-align: center;
   padding: 0 20px;
   padding-bottom: 30px;
-  line-height: 35px;
   bottom: 60px;
   display: none;
   opacity: 0;
@@ -239,11 +246,10 @@ blockquote {
   justify-content: center;
   background-color: #0b0b1e;
   width: 100%;
-  font-size: 18px;
+
   text-align: center;
   padding: 0px 20px;
   padding-bottom: 30px;
-  line-height: 35px;
 }
 
 .about-us-text {
@@ -253,10 +259,7 @@ blockquote {
   justify-content: space-between;
   gap: 100px;
 }
-.about-us-text h2,
-h3 {
-  margin-top: 60px;
-}
+
 .about-us-text div {
   max-width: 700px;
 }
@@ -288,7 +291,29 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding: 0 100px;
+
   text-align: center;
-  clip-path: polygon(50%, 0%, 100%, 50%, 100%, 0%, 50%);
+}
+.five-section {
+  padding: 0 20px;
+  background-color: #0b0b1e;
+  padding-top: 20px;
+  text-align: center;
+}
+.grid-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.grid-media img {
+  height: 100px;
+}
+
+.grid-media p {
+  text-align: justify;
+  margin: 30px;
+  font-size: 16px;
 }
