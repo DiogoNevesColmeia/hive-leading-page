@@ -324,3 +324,25 @@ h3 {
   margin: 30px;
   font-size: 16px;
 }
+
+.six-section {
+  padding: 0 20px;
+  background-color: #0b0b1e;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+  top: -100px;
+}
+#main-footer {
+  background-color: #05050d;
+  height: 200px;
+  position: relative;
+  top: -170px;
+}
+.split-content-hexagon-3 {
+  background-color: #05050d;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: relative;
+  top: -130px;
+}
